@@ -23,7 +23,7 @@ async def spammer(event):
 
 
 
-@jmthon.on(events.NewMessage(outgoing=True, pattern="^.مؤقت (.*)"))
+@jmthon.on(events.NewMessage(outgoing=True, pattern="^.هلا (.*)"))
 async def spammer(event):
     reply = await event.get_reply_message()
     input_str = "".join(event.text.split(maxsplit=1)[1:]).split(" ", 2)
